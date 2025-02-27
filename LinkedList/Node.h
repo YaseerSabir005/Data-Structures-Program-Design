@@ -1,29 +1,32 @@
 //
-// This is the header file for Node class.
+// Created by lakhanis on 6/17/24.
 //
 
 #ifndef LINKEDLISTTODO_NODE_H
 #define LINKEDLISTTODO_NODE_H
 
-class Node
-{
+
+class Node {
 private:
-    Node *next; // Pointer to next node
-    int item;   // A data item
+    Node* next;  //Pointer to next node
+    int item;    //A data item
+
 
 public:
-    // Constructors
+    //Constructors
     Node();
-    Node(const int anItem);
-    Node(const int anItem, Node *nextNodePtr);
+    Node (const int anItem);
+    Node (const int anItem, Node* nextNodePtr);
 
-    // Set methods
-    void setItem(const int anItem);
-    void setNext(Node *nextNodePtr);
+    //Set methods
+    void setItem (const int anItem);
+    void setNext (Node* nextNodePtr);
 
-    // Get methods
+    //Get methods
     int getItem() const;
-    Node *getNext() const;
+    Node* getNext() const;
+
 };
 
-#endif // LINKEDLISTTODO_NODE_H
+
+#endif //LINKEDLISTTODO_NODE_H
